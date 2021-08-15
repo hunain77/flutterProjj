@@ -8,12 +8,14 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
-        child: Container(
-          child: Text('welcome hunain '),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Catalog App"),
       ),
+      body: Center(
+        child: Text("hunain is awesome"),
+      ),
+      drawer: Drawer(),
     );
   }
 }
